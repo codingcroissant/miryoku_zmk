@@ -2,7 +2,7 @@ name: 'Test Berylline'
 on: workflow_dispatch
 jobs:
   build:
-    uses: ./.github/workflows/main.yml
+    uses: ./.github/workflows/test-build.yml
     secrets: inherit
     with:
       board: '["seeeduino_xiao_ble"]'
