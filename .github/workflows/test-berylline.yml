@@ -1,15 +1,12 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Test All Xiao Controllers'
+name: 'Build Berylline'
 on: workflow_dispatch
 jobs:
   build:
-    if: github.repository_owner == 'codingcroissant'
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '[
-        "seeeduino_xiao_ble"
-      ]'
-      shield: '["berylline"]'
+      board: '["seeeduino_xiao_ble"]'
+      shield: '["berylline_left", "berylline_right"]'
