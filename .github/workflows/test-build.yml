@@ -1,4 +1,4 @@
-name: 'Test hummingbird'
+name: 'Build Rufous'
 on: workflow_dispatch
 jobs:
   build:
