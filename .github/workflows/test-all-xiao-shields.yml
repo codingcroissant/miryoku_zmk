@@ -5,7 +5,6 @@ name: 'Test All Xiao Shields'
 on: workflow_dispatch
 jobs:
   build:
-    if: github.repository_owner == 'manna-harbour'
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
