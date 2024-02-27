@@ -1,0 +1,12 @@
+name: 'Test Berylline'
+on: workflow_dispatch
+jobs:
+  build:
+    if: github.repository_owner == 'codingcroissant'
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '[
+        "seeeduino_xiao_ble"
+      ]'
+      shield: '["berylline"]'
