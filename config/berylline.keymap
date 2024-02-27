@@ -5,8 +5,8 @@
 #include "../miryoku/mapping/30/hummingbird.h"
 #include "../miryoku/miryoku.dtsi"
 
-{
-chosen {
-zmk, kscan = &kscan_facedown;
-};
+/ {
+    chosen {
+        zmk, kscan = &kscan_facedown;
+    };
 };
